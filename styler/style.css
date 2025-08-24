@@ -74,6 +74,7 @@ header  p {
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
+     margin-bottom: 30px;
     text-shadow: 2px 2px 0px black;
 
 }
@@ -88,7 +89,7 @@ nav {
 
 nav  a {
     text-decoration: none;
-  color: #ffffff;
+  color: var(--cor2);
   border-radius: 5px;
   padding: 10px; 
   transition-duration: 0.5s;
@@ -135,6 +136,7 @@ main strong {
     color: #1a5c37;
     font-weight: bold;
     
+    
 }
 main a {
     background-color: #c5edb6;
@@ -145,12 +147,53 @@ main a {
 
 
 }
-.pequena {
+main img.pequena {
   max-width: 350px;   /* largura */
  margin: auto;
-  display: block  /* altura ajusta automaticamente para não distorcer */
+  display: block;
+   /* altura ajusta automaticamente para não distorcer */
 }
 
+div.video {
+    background-color: #063d1e;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+
+    
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+  
+}
+
+aside > ul{
+    list-style-type: '\2705\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+
+}
+
+aside > h3 {
+    background-color: #1a5c37;
+    color: #ffffff;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
 footer {
     background-color: var(--cor6);
     color: #ffffff; 
